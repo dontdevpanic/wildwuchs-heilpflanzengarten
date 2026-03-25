@@ -182,7 +182,7 @@ h4 {
     top: 0;
     left: 0;
     height: 2px;
-    background: var(--accent2);
+    background: var(--accent);
     animation: grow-width linear;
     animation-timeline: scroll(root block);
     z-index: 200;
@@ -757,7 +757,7 @@ section {
 
 #hero {
     /* min-height: 100svh; */
-    height: 90vh;
+    height: 100vh;
     display: grid;
     place-items: center;
     position: relative;
