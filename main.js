@@ -53,7 +53,8 @@ themeBtn.addEventListener('click', () => {
 
 /* --- Language toggle --- */
 document.getElementById('lang-toggle').addEventListener('click', () => {
-    window.location.href = 'index-en.html';
+    const isEN = document.documentElement.lang === 'en';
+    window.location.href = isEN ? 'index.html' : 'index-en.html';
 });
 
 /* --- Scroll-reveal fallback (browsers without animation-timeline) --- */

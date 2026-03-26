@@ -898,9 +898,9 @@ section {
 }
 
 .btn-primary {
-    background: var(--accent2);
-    border: 1.5px solid var(--clr-moss-light);
-    color: var(--clr-bark);
+    background: var(--clr-moss);
+    border: 1.5px solid var(--clr-moss);
+    color: var(--clr-cream);
 }
 
 .btn-primary:hover {
@@ -1086,10 +1086,34 @@ section {
     gap: 1rem;
 }
 
-.pflanzen-grid {
+/* .pflanzen-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 1.5rem;
+} */
+
+.pflanzen-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 600px) {
+    .pflanzen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .pflanzen-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .pflanzen-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .pflanze-card {

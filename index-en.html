@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang="de" data-theme="dark">
+<html lang="en" data-theme="dark">
 
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wildwuchs — Lebendiger Heilpflanzengarten</title>
-        <meta name="description" content="Ein lebendiger Ort für Heilpflanzen, Wissen und Begegnung." />
-
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Lato:wght@400;700&display=swap"
-            rel="stylesheet" />
-
+        <title>Wildwuchs - Living Healing Plant Garden</title>
+        <meta name="description" content="A living place for medicinal plants, knowledge and encounters." />
         <link rel="stylesheet" href="style.css" />
-
     </head>
 
     <body>
+
+        <div class="progress-bar" aria-hidden="true"></div>
 
         <!-- HEADER -->
         <header class="site-header" id="site-header">
             <div class="header-inner">
 
-                <!-- Brand — replace SVG with your own logo -->
-                <a href="#hero" class="brand" aria-label="Wildwuchs – zur Startseite">
+                <!-- Brand - replace SVG with your own logo -->
+                <a href="#hero" class="brand" aria-label="Wildwuchs – back to top">
                     <svg class="brand-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
                         aria-hidden="true">
                         <circle cx="18" cy="18" r="17" stroke="var(--accent2)" stroke-width="1.5" />
@@ -39,18 +32,18 @@
                     </svg>
                     <span>
                         <span class="brand-name">Wildwuchs</span>
-                        <span class="brand-tagline" aria-hidden="true">Heilpflanzengarten</span>
+                        <span class="brand-tagline" aria-hidden="true">Healing Plant Garden</span>
                     </span>
                 </a>
 
                 <!-- Navigation -->
-                <nav class="site-nav" aria-label="Hauptnavigation">
-                    <a href="#ueber" data-section="ueber">Garten</a>
-                    <a href="#pflanzen" data-section="pflanzen">Pflanzen</a>
-                    <a href="#heilwissen" data-section="heilwissen">Heilwissen</a>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="#about" data-section="about">Garden</a>
+                    <a href="#pflanzen" data-section="pflanzen">Plants</a>
+                    <a href="#heilwissen" data-section="heilwissen">Healing</a>
                     <a href="#veranstaltungen" data-section="veranstaltungen">Events</a>
-                    <a href="#kontakt" data-section="kontakt">Kontakt</a>
-                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">EN</button>
+                    <a href="#kontakt" data-section="kontakt">Contact</a>
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Sprache wechseln">DE</button>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle colour scheme">
                         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
                             aria-hidden="true">
@@ -79,52 +72,55 @@
             <section id="hero" aria-labelledby="hero-title">
                 <div class="hero-bg" aria-hidden="true"></div>
                 <div class="hero-content">
-                    <span class="hero-label">Freiburg · seit 1987</span>
+                    <span class="hero-label">Freiburg · since 1987</span>
                     <h1 class="hero-title" id="hero-title">
-                        Wo <em>Pflanzen</em><br />heilen dürfen.
+                        Where <em>plants</em><br />are allowed to heal.
                     </h1>
-                    <p class="hero-subtitle">Ein lebendiger Garten für Neugierige, Heilsuchende und alle, die langsamer
-                        werden wollen.</p>
+                    <p class="hero-subtitle">A living garden for the curious, the weary and everyone who wants to slow
+                        down.</p>
                     <div class="hero-cta">
-                        <a href="#pflanzen" class="btn btn-primary">Pflanzen entdecken</a>
-                        <a href="#veranstaltungen" class="btn btn-outline">Führungen &amp; Events</a>
+                        <a href="#pflanzen" class="btn btn-primary">Discover plants</a>
+                        <a href="#veranstaltungen" class="btn btn-outline">Tours &amp; Events</a>
                     </div>
                 </div>
                 <div class="hero-scroll-hint" aria-hidden="true">
-                    <span>Scrollen</span>
                     <span class="scroll-line"></span>
                 </div>
             </section>
 
             <!-- ABOUT THE GARDEN -->
-            <section id="ueber" aria-labelledby="ueber-title">
-                <div class="sda-reveal">
-                    <p class="section-label">Unsere Geschichte</p>
-                    <h2 class="section-title" id="ueber-title">Mehr als ein Garten</h2>
-                </div>
-                <div class="ueber-grid">
-                    <div class="ueber-img-wrap sda-reveal">
-                        <!-- Replace src — recommended: 800×1000 px, portrait -->
-                        <img src="img/wildwuchs-heilpflanzengarten.jpg" alt="Blick in den Wildwuchs Heilpflanzengarten"
-                            class="ueber-img" width="800" height="1000" loading="lazy" />
+            <section id="about" aria-labelledby="about-title">
+                <div class="about-grid">
+                    <div class="about-img-wrap sda-reveal">
+                        <img src="img/wildwuchs-heilpflanzengarten.jpg"
+                            alt="View into the Wildwuchs healing plant garden" class="about-img" width="600"
+                            height="800" loading="lazy" />
                     </div>
-                    <div class="ueber-text">
+                    <div class="about-text">
                         <div class="sda-reveal">
-                            <p>Inmitten der Stadt liegt unser Heilpflanzengarten — ein Ort, an dem altes Wissen auf
-                                lebendige Erde trifft. Seit 1987 pflegen wir hier über 400 Pflanzenarten, von
-                                Wildkräutern bis zu seltenen Heilpflanzen aus aller Welt.</p>
-                            <p>Wir glauben, dass jede Pflanze eine Geschichte erzählt. Unsere Gärtnerinnen und Gärtner
-                                kennen diese Geschichten — und teilen sie gerne.</p>
-                            <p>Der Garten ist kein Museum. Er wächst, blüht, verblüht und wächst wieder. Komm so oft du
-                                möchtest — er sieht jedes Mal anders aus.</p>
+                            <p class="section-label">Our Story</p>
+                            <h2 class="section-title" id="about-title">More than a garden</h2>
+                            <p>In the heart of the city lies our healing plant garden - a place where ancient knowledge
+                                meets living soil. Since 1987 we have tended over 400 plant species here, from wild
+                                herbs to rare medicinal plants from around the world.</p>
+                            <p>We believe every plant has a story to tell. Our gardeners know these stories - and love
+                                to share them.</p>
+                            <p>The garden is not a museum. It grows, blooms, fades and grows again. Come as often as you
+                                like - it looks different every time.</p>
                         </div>
                         <div class="stats-row sda-reveal">
-                            <div class="stat"><span class="stat-number">400+</span><span
-                                    class="stat-label">Pflanzenarten</span></div>
-                            <div class="stat"><span class="stat-number">37</span><span class="stat-label">Jahre
-                                    gewachsen</span></div>
-                            <div class="stat"><span class="stat-number">12</span><span
-                                    class="stat-label">Themengärten</span></div>
+                            <div class="stat">
+                                <span class="stat-number"></span>
+                                <span class="stat-label">Plant species</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number"></span>
+                                <span class="stat-label">Years growing</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number"></span>
+                                <span class="stat-label">Theme gardens</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,84 +130,151 @@
             <section id="pflanzen" aria-labelledby="pflanzen-title">
                 <div class="pflanzen-header sda-reveal">
                     <div>
-                        <p class="section-label">Unsere Sammlung</p>
-                        <h2 class="section-title" id="pflanzen-title">Pflanzen-Highlights</h2>
+                        <p class="section-label">Our Collection</p>
+                        <h2 class="section-title" id="pflanzen-title">Plant Highlights</h2>
                     </div>
-                    <a href="#" class="btn btn-outline">Alle 400+ Arten →</a>
+                    <a href="#" class="btn btn-outline">All 400+ species →</a>
                 </div>
                 <div class="pflanzen-grid">
 
                     <article class="pflanze-card">
                         <div class="pflanze-img">
-                            <!-- Replace src — recommended: 520×390 px, landscape -->
-                            <img src="img/spitzwegerich.jpg" alt="Spitzwegerich (Plantago lanceolata)" width="520"
+                            <img src="img/spitzwegerich.jpg" alt="Ribwort plantain (Plantago lanceolata)" width="520"
                                 height="390" loading="lazy" />
                         </div>
                         <div class="pflanze-body">
-                            <h3 class="pflanze-name">Spitzwegerich</h3>
+                            <h3 class="pflanze-name">Ribwort Plantain</h3>
                             <p class="pflanze-latin">Plantago lanceolata</p>
-                            <p class="pflanze-desc">Unscheinbar am Wegesrand — und doch eines der vielseitigsten
-                                Heilkräuter unserer Region.</p>
+                            <p class="pflanze-desc">Inconspicuous by the roadside - yet one of the most versatile
+                                medicinal herbs in our region.</p>
                             <div class="pflanze-tags">
-                                <span class="tag moss">Heimisch</span>
-                                <span class="tag terra">Heilpflanze</span>
-                                <span class="tag">Atemwege</span>
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Respiratory</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="pflanze-card">
                         <div class="pflanze-img">
-                            <!-- Replace src — recommended: 520×390 px, landscape -->
-                            <img src="img/kamille.jpg" alt="Echte Kamille (Matricaria chamomilla)" width="520"
+                            <img src="img/kamille.jpg" alt="German chamomile (Matricaria chamomilla)" width="520"
                                 height="390" loading="lazy" />
                         </div>
                         <div class="pflanze-body">
-                            <h3 class="pflanze-name">Echte Kamille</h3>
+                            <h3 class="pflanze-name">German Chamomile</h3>
                             <p class="pflanze-latin">Matricaria chamomilla</p>
-                            <p class="pflanze-desc">Der Klassiker der Volksmedizin. Beruhigend, entzündungshemmend,
-                                duftig.</p>
+                            <p class="pflanze-desc">The classic of folk medicine. Calming, anti-inflammatory, fragrant.
+                            </p>
                             <div class="pflanze-tags">
-                                <span class="tag moss">Heimisch</span>
-                                <span class="tag terra">Heilpflanze</span>
-                                <span class="tag">Entzündung</span>
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Inflammation</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="pflanze-card">
                         <div class="pflanze-img">
-                            <!-- Replace src — recommended: 520×390 px, landscape -->
-                            <img src="img/baldrian.jpg" alt="Echter Baldrian (Valeriana officinalis)" width="520"
+                            <img src="img/baldrian.jpg" alt="Common valerian (Valeriana officinalis)" width="520"
                                 height="390" loading="lazy" />
                         </div>
                         <div class="pflanze-body">
-                            <h3 class="pflanze-name">Echter Baldrian</h3>
+                            <h3 class="pflanze-name">Common Valerian</h3>
                             <p class="pflanze-latin">Valeriana officinalis</p>
-                            <p class="pflanze-desc">Seit Jahrhunderten bewährt bei Unruhe und Schlafproblemen.</p>
+                            <p class="pflanze-desc">Trusted for centuries for restlessness and sleep problems.</p>
                             <div class="pflanze-tags">
-                                <span class="tag moss">Heimisch</span>
-                                <span class="tag terra">Heilpflanze</span>
-                                <span class="tag">Schlaf</span>
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Sleep</span>
                             </div>
                         </div>
                     </article>
 
                     <article class="pflanze-card">
                         <div class="pflanze-img">
-                            <!-- Replace src — recommended: 520×390 px, landscape -->
-                            <img src="img/ringelblume.jpg" alt="Ringelblume (Calendula officinalis)" width="520"
+                            <img src="img/ringelblume.jpg" alt="Pot marigold (Calendula officinalis)" width="520"
                                 height="390" loading="lazy" />
                         </div>
                         <div class="pflanze-body">
-                            <h3 class="pflanze-name">Ringelblume</h3>
+                            <h3 class="pflanze-name">Pot Marigold</h3>
                             <p class="pflanze-latin">Calendula officinalis</p>
-                            <p class="pflanze-desc">Leuchtend orange, fast das ganze Jahr — eine der wichtigsten
-                                Wundpflanzen.</p>
+                            <p class="pflanze-desc">Bright orange almost all year - one of the most important
+                                wound-healing plants.</p>
                             <div class="pflanze-tags">
-                                <span class="tag">Kultur</span>
-                                <span class="tag terra">Heilpflanze</span>
-                                <span class="tag">Haut</span>
+                                <span class="tag">Cultivated</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Skin</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pflanze-card">
+                        <div class="pflanze-img">
+                            <img src="img/spitzwegerich.jpg" alt="Ribwort plantain (Plantago lanceolata)" width="520"
+                                height="390" loading="lazy" />
+                        </div>
+                        <div class="pflanze-body">
+                            <h3 class="pflanze-name">Ribwort Plantain</h3>
+                            <p class="pflanze-latin">Plantago lanceolata</p>
+                            <p class="pflanze-desc">Inconspicuous by the roadside - yet one of the most versatile
+                                medicinal herbs in our region.</p>
+                            <div class="pflanze-tags">
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Respiratory</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pflanze-card">
+                        <div class="pflanze-img">
+                            <img src="img/kamille.jpg" alt="German chamomile (Matricaria chamomilla)" width="520"
+                                height="390" loading="lazy" />
+                        </div>
+                        <div class="pflanze-body">
+                            <h3 class="pflanze-name">German Chamomile</h3>
+                            <p class="pflanze-latin">Matricaria chamomilla</p>
+                            <p class="pflanze-desc">The classic of folk medicine. Calming, anti-inflammatory, fragrant.
+                            </p>
+                            <div class="pflanze-tags">
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Inflammation</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pflanze-card">
+                        <div class="pflanze-img">
+                            <img src="img/baldrian.jpg" alt="Common valerian (Valeriana officinalis)" width="520"
+                                height="390" loading="lazy" />
+                        </div>
+                        <div class="pflanze-body">
+                            <h3 class="pflanze-name">Common Valerian</h3>
+                            <p class="pflanze-latin">Valeriana officinalis</p>
+                            <p class="pflanze-desc">Trusted for centuries for restlessness and sleep problems.</p>
+                            <div class="pflanze-tags">
+                                <span class="tag moss">Native</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Sleep</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="pflanze-card">
+                        <div class="pflanze-img">
+                            <img src="img/ringelblume.jpg" alt="Pot marigold (Calendula officinalis)" width="520"
+                                height="390" loading="lazy" />
+                        </div>
+                        <div class="pflanze-body">
+                            <h3 class="pflanze-name">Pot Marigold</h3>
+                            <p class="pflanze-latin">Calendula officinalis</p>
+                            <p class="pflanze-desc">Bright orange almost all year - one of the most important
+                                wound-healing plants.</p>
+                            <div class="pflanze-tags">
+                                <span class="tag">Cultivated</span>
+                                <span class="tag terra">Medicinal</span>
+                                <span class="tag">Skin</span>
                             </div>
                         </div>
                     </article>
@@ -222,80 +285,81 @@
             <!-- HEALING KNOWLEDGE -->
             <section id="heilwissen" aria-labelledby="heilwissen-title">
                 <div class="heilwissen-intro sda-reveal">
-                    <p class="section-label">Volksmedizin &amp; Wirkung</p>
-                    <h2 class="section-title" id="heilwissen-title">Was die Pflanzen können</h2>
-                    <p class="section-intro">Kein Hokuspokus — sondern Generationenwissen, das die Wissenschaft immer
-                        öfter bestätigt.</p>
+                    <p class="section-label">Folk Medicine &amp; Effects</p>
+                    <h2 class="section-title" id="heilwissen-title">What plants can do</h2>
+                    <p class="section-intro">No hocus-pocus - generational knowledge that science is increasingly
+                        confirming.</p>
                 </div>
                 <div class="heilwissen-grid">
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">🌿</span>
-                        <h3>Spitzwegerich</h3>
+                        <h3>Ribwort Plantain</h3>
                         <span class="heil-latin">Plantago lanceolata</span>
-                        <p>Aucubin und Acteoside machen ihn zum natürlichen Schleimlöser. Blätter direkt auf
-                            Mückenstiche legen wirkt.</p>
+                        <p>Aucubin and acteoside make it a natural expectorant. Placing leaves directly on insect bites
+                            actually works.</p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Hustensaft aus frischen Blättern · Umschlag bei Insektenstichen</strong>
+                            Application
+                            <strong>Cough syrup from fresh leaves · Compress for insect bites</strong>
                         </div>
                     </article>
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">🌼</span>
-                        <h3>Kamille</h3>
+                        <h3>Chamomile</h3>
                         <span class="heil-latin">Matricaria chamomilla</span>
-                        <p>Alpha-Bisabolol und Chamazulen wirken entzündungshemmend — innerlich wie äußerlich.</p>
+                        <p>Alpha-bisabolol and chamazulene are anti-inflammatory - internally and externally.</p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Tee · Dampfbad · Salbe für Wunden und Ekzeme</strong>
+                            Application
+                            <strong>Tea · Steam bath · Ointment for wounds and eczema</strong>
                         </div>
                     </article>
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">🌙</span>
-                        <h3>Baldrian</h3>
+                        <h3>Valerian</h3>
                         <span class="heil-latin">Valeriana officinalis</span>
-                        <p>Valerensäure beeinflusst GABA-Rezeptoren — sanfter als Schlafmittel, kein
-                            Abhängigkeitspotenzial.</p>
+                        <p>Valerenic acid influences GABA receptors - gentler than sleeping pills, no dependency
+                            potential.</p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Tinktur · Tee · Extrakt-Kapseln bei Schlafstörungen</strong>
+                            Application
+                            <strong>Tincture · Tea · Extract capsules for sleep disorders</strong>
                         </div>
                     </article>
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">🟠</span>
-                        <h3>Ringelblume</h3>
+                        <h3>Pot Marigold</h3>
                         <span class="heil-latin">Calendula officinalis</span>
-                        <p>Flavonoide und Saponine fördern die Wundheilung. Eine Calendula-Salbe gehört in jede
-                            Hausapotheke.</p>
+                        <p>Flavonoids and saponins promote wound healing. A calendula ointment belongs in every medicine
+                            cabinet.</p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Salbe · Ölauszug · Tee bei Schleimhautentzündungen</strong>
+                            Application
+                            <strong>Ointment · Oil infusion · Tea for mucous membrane inflammation</strong>
                         </div>
                     </article>
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">💜</span>
-                        <h3>Lavendel</h3>
+                        <h3>Lavender</h3>
                         <span class="heil-latin">Lavandula angustifolia</span>
-                        <p>Linalool wirkt nachweislich beruhigend auf das Nervensystem — als Duft und innerlich.</p>
+                        <p>Linalool has a demonstrably calming effect on the nervous system - as a scent and internally.
+                        </p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Ätherisches Öl · Tee · Kissenduft · Tinktur</strong>
+                            Application
+                            <strong>Essential oil · Tea · Pillow scent · Tincture</strong>
                         </div>
                     </article>
 
                     <article class="heil-card">
                         <span class="heil-icon" aria-hidden="true">🫚</span>
-                        <h3>Johanniskraut</h3>
+                        <h3>St John's Wort</h3>
                         <span class="heil-latin">Hypericum perforatum</span>
-                        <p>Hypericin und Hyperforin zeigen antidepressive Wirkung. Wechselwirkungen beachten —
-                            Rücksprache halten.</p>
+                        <p>Hypericin and hyperforin show antidepressant effects. Watch for interactions - always consult
+                            a professional.</p>
                         <div class="heil-anwendung">
-                            Anwendung
-                            <strong>Rotöl für Muskeln · Tee · Extrakt bei leichter Depression</strong>
+                            Application
+                            <strong>Red oil for muscles · Tea · Extract for mild depression</strong>
                         </div>
                     </article>
 
@@ -305,9 +369,9 @@
             <!-- EVENTS -->
             <section id="veranstaltungen" aria-labelledby="veranstaltungen-title">
                 <div class="sda-reveal">
-                    <p class="section-label">Führungen &amp; Workshops</p>
-                    <h2 class="section-title" id="veranstaltungen-title">Im Garten lernen</h2>
-                    <p class="section-intro">Alle Veranstaltungen finden draußen statt — und riechen gut.</p>
+                    <p class="section-label">Tours &amp; Workshops</p>
+                    <h2 class="section-title" id="veranstaltungen-title">Learn in the garden</h2>
+                    <p class="section-intro">All events take place outdoors - and smell wonderful.</p>
                 </div>
                 <div class="events-grid">
 
@@ -315,11 +379,11 @@
                         <div class="event-date"><span class="event-day">14</span><span class="event-month">Jun</span>
                         </div>
                         <div class="event-info">
-                            <h3>Kräuterführung: Heilpflanzen am Wegesrand</h3>
-                            <p>Gemeinsam durch den Garten — und alle Pflanzen, die ihr kostenlos in freier Natur finden
-                                könnt.</p>
+                            <h3>Herb walk: medicinal plants by the wayside</h3>
+                            <p>A guided walk through the garden - and all the plants you can find for free in the wild.
+                            </p>
                             <div class="event-meta">
-                                <span>🕐 10:00 Uhr</span><span>⏱ 90 Min</span><span>💶 12 €</span>
+                                <span>🕐 10:00 am</span><span>⏱ 90 min</span><span>💶 €12</span>
                             </div>
                         </div>
                     </article>
@@ -328,11 +392,10 @@
                         <div class="event-date"><span class="event-day">21</span><span class="event-month">Jun</span>
                         </div>
                         <div class="event-info">
-                            <h3>Workshop: Hustensaft selbst herstellen</h3>
-                            <p>Spitzwegerich, Thymian und Honig — ihr nehmt ein Glas echten Hustensaft mit nach Hause.
-                            </p>
+                            <h3>Workshop: make your own cough syrup</h3>
+                            <p>Ribwort plantain, thyme and honey - you take home a jar of real cough syrup.</p>
                             <div class="event-meta">
-                                <span>🕐 14:00 Uhr</span><span>⏱ 2 Std</span><span>💶 24 €</span>
+                                <span>🕐 2:00 pm</span><span>⏱ 2 hrs</span><span>💶 €24</span>
                             </div>
                         </div>
                     </article>
@@ -341,10 +404,11 @@
                         <div class="event-date"><span class="event-day">05</span><span class="event-month">Jul</span>
                         </div>
                         <div class="event-info">
-                            <h3>Mondkalender &amp; Erntezeit</h3>
-                            <p>Wann sammelt man Blüten, wann Wurzeln? Volkskunde und modernes Wissen im Dialog.</p>
+                            <h3>Moon calendar &amp; harvest time</h3>
+                            <p>When do you pick flowers, when roots? Folk tradition and modern knowledge in dialogue.
+                            </p>
                             <div class="event-meta">
-                                <span>🕐 16:00 Uhr</span><span>⏱ 75 Min</span><span>💶 8 €</span>
+                                <span>🕐 4:00 pm</span><span>⏱ 75 min</span><span>💶 €8</span>
                             </div>
                         </div>
                     </article>
@@ -353,11 +417,11 @@
                         <div class="event-date"><span class="event-day">19</span><span class="event-month">Jul</span>
                         </div>
                         <div class="event-info">
-                            <h3>Kinder-Kräutertag</h3>
-                            <p>Für Kinder ab 6: Pflanzen anfassen, riechen, bestimmen — und eine Kräuterbutter
-                                zubereiten.</p>
+                            <h3>Children's herb day</h3>
+                            <p>For children aged 6+: touch, smell and identify plants - and make herb butter together.
+                            </p>
                             <div class="event-meta">
-                                <span>🕐 10:00 Uhr</span><span>⏱ 2 Std</span><span>💶 Frei</span>
+                                <span>🕐 10:00 am</span><span>⏱ 2 hrs</span><span>💶 Free</span>
                             </div>
                         </div>
                     </article>
@@ -368,28 +432,28 @@
             <!-- CONTACT / VISITOR INFO -->
             <section id="kontakt" aria-labelledby="kontakt-title">
                 <div class="sda-reveal">
-                    <p class="section-label">Besuch &amp; Kontakt</p>
-                    <h2 class="section-title" id="kontakt-title">Wir freuen uns auf dich</h2>
+                    <p class="section-label">Visit &amp; Contact</p>
+                    <h2 class="section-title" id="kontakt-title">We look forward to seeing you</h2>
                 </div>
                 <div class="kontakt-grid">
                     <div class="info-block sda-reveal">
                         <div class="info-item">
-                            <h4>Adresse</h4>
-                            <p>Wildwuchs Heilpflanzengarten<br />Gartenstraße 12<br />79106 Freiburg im Breisgau</p>
+                            <h3>Address</h3>
+                            <p>Wildwuchs Healing Plant Garden<br />Gartenstraße 12<br />79106 Freiburg im Breisgau</p>
                         </div>
                         <div class="info-item">
-                            <h4>Öffnungszeiten</h4>
-                            <p>Di – So: 9:00 – 18:00 Uhr<br />Mo: geschlossen<br />Nov – Feb: 10:00 – 16:00 Uhr</p>
+                            <h3>Opening hours</h3>
+                            <p>Tue – Sun: 9:00 am – 6:00 pm<br />Mon: closed<br />Nov – Feb: 10:00 am – 4:00 pm</p>
                         </div>
                         <div class="info-item">
-                            <h4>Eintritt</h4>
-                            <p>Erwachsene: 5 €<br />Kinder (6–14): 2 €<br />Kinder unter 6: frei<br />Familienticket: 12
-                                €</p>
+                            <h3>Admission</h3>
+                            <p>Adults: €5<br />Children (6–14): €2<br />Children under 6: free<br />Family ticket: €12
+                            </p>
                         </div>
                         <div class="info-item">
-                            <h4>Kontakt</h4>
+                            <h3>Contact</h3>
                             <p>
-                                <a href="mailto:hallo@wildwuchs-beispiel.de">hallo@wildwuchs-beispiel.de</a><br />
+                                <a href="mailto:hello@wildwuchs-example.com">hello@wildwuchs-example.com</a><br />
                                 +49 761 000 00 00
                             </p>
                         </div>
@@ -406,7 +470,7 @@
                                     d="M20 31 C20 31 10 22 10 17 C10 11.5 14.5 7 20 7 C25.5 7 30 11.5 30 17 C30 22 20 31 20 31Z"
                                     stroke="var(--fg-muted)" stroke-width="1.2" fill="none" opacity="0.4" />
                             </svg>
-                            <span>Map placeholder — embed OpenStreetMap or similar here</span>
+                            <span>Map placeholder - embed OpenStreetMap or similar here</span>
                         </div>
                     </div>
                 </div>
@@ -416,16 +480,15 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>© 2025 Wildwuchs — fiktive Demo-Website</p>
-            <nav class="footer-links" aria-label="Footer-Navigation">
-                <a href="#">Impressum</a>
-                <a href="#">Datenschutz</a>
-                <a href="#">Barrierefreiheit</a>
+            <p>© 2025 Wildwuchs - fictitious demo website</p>
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#">GitHub Profile</a>
+                <a href="#">GitHub Repo</a>
             </nav>
         </footer>
 
         <!-- BACK TO TOP -->
-        <button class="back-to-top" id="back-to-top" aria-label="Zurück nach oben">
+        <button class="back-to-top" id="back-to-top" aria-label="Back to top">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <polyline points="18 15 12 9 6 15" />
