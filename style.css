@@ -449,7 +449,8 @@ main {
    SECTION BASE
 ========================================== */
 section {
-    padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 6vw, 5rem);
+    /* clamp(min, preferred, max) */
+    padding: clamp(4rem, 10vw, 8rem) clamp(1.5rem, 8vw, 6rem);
     scroll-margin-top: var(--nav-h-sm);
 }
 
@@ -473,6 +474,34 @@ section {
     color: var(--fg-muted);
     max-width: 60ch;
     line-height: 1.8;
+}
+
+/* =======================================
+   GRID
+========================================== */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 /* ============================================================
@@ -650,6 +679,33 @@ section {
     }
 
     /* 6. HEALING KNOWLEDGE STRIP — desaturated to full colour */
+
+    /* opacity-shift cards */
+    /* .heil-card:nth-child(odd) {
+        animation: heilCardShift linear both;
+        animation-timeline: view(block);
+        animation-range: entry 60% cover 80%;
+    }
+
+    .heil-card:nth-child(even) {
+        animation: heilCardShift linear both;
+        animation-timeline: view(block);
+        animation-range: entry 60% cover 80%;
+    }
+
+    @keyframes heilCardShift {
+        from {
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+
+        to {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+    } */
+
+
     #heilwissen {
         animation: heilReveal linear both;
         animation-timeline: view();
@@ -659,7 +715,7 @@ section {
     @keyframes heilReveal {
         from {
             filter: saturate(0) brightness(0.5);
-            transform: scale(0.97);
+            transform: scale(0.9);
         }
 
         to {
@@ -1092,30 +1148,6 @@ section {
     gap: 1.5rem;
 } */
 
-.pflanzen-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-}
-
-@media (min-width: 600px) {
-    .pflanzen-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 900px) {
-    .pflanzen-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .pflanzen-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 .pflanze-card {
     background: var(--bg-alt);
     border: 1px solid var(--border);
@@ -1214,7 +1246,7 @@ section {
     padding-top: clamp(5rem, 12vw, 9rem);
     padding-bottom: clamp(5rem, 12vw, 9rem);
     position: relative;
-    overflow: hidden;
+    overflow: clip;
 }
 
 [data-theme="dark"] #heilwissen {
@@ -1246,11 +1278,11 @@ section {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.heilwissen-grid {
+/* .heilwissen-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 1.5rem;
-}
+} */
 
 .heil-card {
     background: rgba(255, 255, 255, 0.1);
