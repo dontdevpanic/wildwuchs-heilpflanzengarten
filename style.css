@@ -1476,7 +1476,10 @@ section {
 
 .map-placeholder {
     aspect-ratio: 4 / 3;
-    background: linear-gradient(135deg, var(--clr-mist), var(--bg-alt));
+    /* background: linear-gradient(135deg, var(--clr-mist), var(--bg-alt)); */
+    background-image: url('img/wildwuchs-map.jpg');
+    background-size: cover;
+    background-position: center;
     border-radius: calc(var(--radius) * 2);
     border: 1px solid var(--border);
     display: flex;
